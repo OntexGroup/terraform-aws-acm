@@ -34,3 +34,7 @@ resource "aws_acm_certificate_validation" "cert" {
     "${aws_route53_record.cert_validation.fqdn}",
   ]
 }
+
+output "certificate_arn" {
+  value = aws_acm_certificate.cert.arn
+}
