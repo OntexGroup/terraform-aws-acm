@@ -14,6 +14,11 @@ variable "validation_method" {
   description = "Method to use for validation, `DNS` or `EMAIL` are valid"
 }
 
+variable "existing_validation" {
+  description = "Set to true is DNS validation already exists"
+  default = false
+}
+
 variable "common_name" {
   description = "A domain name for which the certificate should be issued"
 }
