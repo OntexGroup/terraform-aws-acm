@@ -1,4 +1,3 @@
-variable "env" {}
 
 variable "aws" {
   type    = any
@@ -20,5 +19,5 @@ variable "zone_id" {
 
 variable "alternative_names" {
   description = "A list of domains that should be SANs in the issued certificate"
-  type        = "list"
+  type        = list
 }
