@@ -21,3 +21,8 @@ variable "alternative_names" {
   description = "A list of domains that should be SANs in the issued certificate"
   type        = list
 }
+
+variable "wait_for_validation" {
+  type    = bool
+  default = true
+}

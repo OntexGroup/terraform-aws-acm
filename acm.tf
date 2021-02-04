@@ -6,7 +6,7 @@ module "acm" {
   zone_id     = var.zone_id
 
   subject_alternative_names = var.alternative_names
-  wait_for_validation = true
+  wait_for_validation = var.wait_for_validation
 
   tags = var.custom_tags
 }
