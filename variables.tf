@@ -1,4 +1,10 @@
 
+variable "create_certificate" {
+  description = "Whether to create ACM certificate"
+  type        = bool
+  default     = true
+}
+
 variable "aws" {
   type    = any
   default = {}
